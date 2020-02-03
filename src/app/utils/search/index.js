@@ -8,7 +8,9 @@ const getUrl = ({ checkin, checkout }) => {
 };
 
 const getPage = async url => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    ignoreDefaultArgs: ['--disable-extensions'],
+  });
   const page = await browser.newPage();
   await page.goto(url);
   await page.setViewport({ width: 1920, height: 1080 });
