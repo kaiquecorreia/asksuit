@@ -13,7 +13,8 @@ Test for asksuit
 - Executar comando: yarn
 ## Execução
 - Para testar a API executar o comando yarn dev
-- Rota: /buscar
+- Server: localhost:3333
+- Rota: localhost:3333/buscar
 - Método: POST
 - Body: JSON
 - Exemplo Body:  {"checkin":"10/02/2020", "checkout":"15/02/2020"}
